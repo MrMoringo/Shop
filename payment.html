@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black; /* Устанавливаем черный фон */
+            color: white; /* Устанавливаем белый цвет текста для контраста */
+        }
+         /* Контейнер для логотипа и списка */
+         .container {
+            display: flex; /* Используем Flexbox для выравнивания */
+            align-items: center; /* Выравниваем элементы по вертикали */
+            gap: 20px; /* Расстояние между логотипом и списком */
+        }
+        /* Стили для логотипа */
+        .logo {
+            width: 100px; /* Ширина логотипа */
+            height: auto; /* Автоматическая высота для сохранения пропорций */
+        }
+       /* Стили для списка */
+       .list {
+            display: flex; /* Делаем список горизонтальным */
+            list-style-type: none; /* Убираем маркеры списка */
+            margin: 0; /* Убираем отступы по умолчанию */
+            padding: 0; /* Убираем внутренние отступы по умолчанию */
+            gap: 15px; /* Расстояние между элементами списка */ 
+        }
+         /* Стили для элементов списка */
+         .list li {
+            padding: 10px 15px; /* Добавляем отступы внутри элементов */
+            color: rgb(255, 255, 255); /* Цвет текста */
+           
+            border-radius: 5px; /* Закругляем углы */
+            cursor: pointer; /* Меняем курсор при наведении */
+            transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
+        }
+        .list li a {
+    color: rgb(255, 255, 255); /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+  /* Стили для элементов списка при наведении */
+  .list li:hover {
+            background-color: #d8bd26; /* Цвет фона при наведении */
+  }
+  /* Стили для хлебных крошек */
+  .breadcrumbs {
+            margin: 10px 0; /* Отступы сверху и снизу */
+        }
+        .breadcrumbs ul {
+            list-style: none; /* Убираем маркеры списка */
+            padding: 0; /* Убираем отступы */
+            margin: 0; /* Убираем отступы */
+            display: flex; /* Делаем список горизонтальным */
+            gap: 5px; /* Расстояние между элементами */
+            
+        }
+        .breadcrumbs ul li {
+            display: inline-block; /* Элементы списка в строку */
+        }
+
+        .breadcrumbs ul li a {
+
+            text-decoration: none; /* Убираем подчеркивание ссылок */
+            color: #ffffff; /* Цвет ссылок */
+            transition: color 0.3s ease; /* Плавное изменение цвета */
+        }
+
+        .breadcrumbs ul li a:hover {
+            color: #d8bd26; /* Цвет ссылок при наведении */
+        }
+
+        .breadcrumbs ul li::after {
+            content: "›"; /* Разделитель между элементами */
+            margin: 0 5px; /* Отступы вокруг разделителя */
+            color: #666; /* Цвет разделителя */
+        }
+
+        .breadcrumbs ul li:last-child::after {
+            content: ""; /* Убираем разделитель у последнего элемента */
+        }
+
+        .breadcrumbs ul li:last-child a 
+        {
+            color: #ffffff; /* Цвет текста для последнего элемента (текущая страница) */
+            pointer-events: none; /* Отключаем клик по последнему элементу */
+            cursor: default; /* Убираем курсор-указатель */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <img src="c:\Users\dariuz\Downloads\logo_sucba.svg" class="logo">
+                <h1>Магазин дронов</h1>
+                  <ul class="list">
+                        <li><a href="about.html">О магазине</a></li>
+                        <li><a href="payment.html">Оплата и доставка</a></li>
+                        <li><a href="refund.html">Возврат и обмен</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+            </div>
+        </div>
+         <!-- Хлебные крошки -->
+         <nav class="breadcrumbs">
+            <ul>
+                <li><a href="mainpage.html">Главная</a></li>
+                <li><a href="about.html">Оплата и доставка</a></li>
+            </ul>
+        </nav>
+        <h2>Оплата и доставка</h2>
+        <hr>
+        
+    </header>
+
+    <!-- Основное содержимое страницы -->
+    <main>
+        <!-- Здесь будет основной контент страницы -->
+        
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer>
+        <!-- Здесь будет подвал -->
+    </footer>
+</body>
+</html>
