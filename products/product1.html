@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styleTovar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../images/logo_sucba.svg" class="logo">
+            <h1>Магазин ФЦБВС</h1>                
+            <ul class="list">
+                <li><a href="../about.html">О магазине</a></li>
+                <li><a href="../payment.html">Оплата и доставка</a></li>
+                <li><a href="../refund.html">Возврат и обмен</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../mainpage.html">Главная</a></li>
+                <li><a href="../tovar.html">Список товаров</a></li>
+                <li><a href="product1.html">Аккумулятор 1100мАч</a></li>
+            </ul>
+        </nav>
+        <h2>Аккумулятор CNHL-Black Series 1100мАч 6s 100C XT60</h2>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="main-image" src="../tovar/IMG_20250129_154041.jpg" alt="Аккумулятор CNHL-Black Series">
+            </div>
+            <div class="thumbnails">
+                <img src="../tovar/IMG_20250129_154041(3).jpg" alt="Фото 1" onclick="changeImage(this.src)">
+                <img src="../tovar/IMG_20250129_154041(2).jpg" alt="Фото 2" onclick="changeImage(this.src)">
+                <img src="../tovar/IMG_20250129_154041.jpg" alt="Фото 3" onclick="changeImage(this.src)">
+            </div>
+        </div>
+        <script>
+            function changeImage(newSrc) {
+                // Находим основное изображение по ID
+                const mainImage = document.getElementById('main-image');
+                // Меняем его src на новое значение
+                mainImage.src = newSrc;
+            }
+        </script>
+        <div class="product-details">
+            <p class="price">Цена: <strong>2700 руб</strong></p>
+            <button class="add-to-cart">Добавить в корзину</button>
+            <div class="description">
+                <h3>Описание товара</h3>
+                <p>Аккумулятор CNHL-Black Series 1100мАч 6s 100C XT60 — это высококачественный аккумулятор для дронов, обеспечивающий стабильную работу и длительное время полета. Идеально подходит для профессиональных гонок и любительских полетов.</p>
+            </div>
+            <div class="specifications">
+                <h3>Характеристики</h3>
+                <ul>
+                    <li><strong>Емкость:</strong> 1100 мАч</li>
+                    <li><strong>Конфигурация:</strong> 6S1P (22.2 В)</li>
+                    <li><strong>Скорость разряда:</strong> 100C(непрерывный ток) / 200C (пиковый ток)</li>
+                    <li><strong>Скорость зарядки:</strong> 5C (макс)</li>
+                    <li><strong>Размер:</strong> 48 Х 35 Х 76 мм</li>
+                    <li><strong>Выходной разьем:</strong> XT60</li>
+                    <li><strong>Вес:</strong> 230г (включай провод и разьём)</li>
+                    <li><strong>Балансировочный разъем:</strong> JST / XH</li>
+                    <li><strong>Тип аккумулятора:</strong> LiPo</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Подвал страницы -->
+    <footer>
+        <!-- Здесь будет подвал -->
+    </footer>
+</body>
+</html>

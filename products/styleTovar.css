@@ -1,0 +1,101 @@
+/* Стили для страницы товара */
+.product-page {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-images {
+    flex: 1;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnails {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.thumbnails img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-details .price {
+    font-size: 20px;
+    color: #d8bd26;
+    margin-bottom: 20px;
+}
+
+.add-to-cart {
+    background-color: #d8bd26;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #c0a620;
+}
+
+.description, .specifications {
+    margin-top: 20px;
+}
+
+.description h3, .specifications h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.specifications ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.specifications ul li {
+    margin-bottom: 5px;
+}
+
+/* Стили для хлебных крошек */
+.breadcrumbs ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.breadcrumbs ul li {
+    color: #777;
+}
+
+.breadcrumbs ul li:not(:last-child)::after {
+    content: ">";
+    margin-left: 10px;
+}

@@ -1,75 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            background-color: black; /* Устанавливаем черный фон */
-            color: white; /* Устанавливаем белый цвет текста для контраста */
-        }
-         /* Контейнер для логотипа и списка */
-         .container {
-            display: flex; /* Используем Flexbox для выравнивания */
-            align-items: center; /* Выравниваем элементы по вертикали */
-            gap: 20px; /* Расстояние между логотипом и списком */
-        }
-        /* Стили для логотипа */
-        .logo {
-            width: 100px; /* Ширина логотипа */
-            height: auto; /* Автоматическая высота для сохранения пропорций */
-        }
-       /* Стили для списка */
-       .list {
-            display: flex; /* Делаем список горизонтальным */
-            list-style-type: none; /* Убираем маркеры списка */
-            margin: 0; /* Убираем отступы по умолчанию */
-            padding: 0; /* Убираем внутренние отступы по умолчанию */
-            gap: 15px; /* Расстояние между элементами списка */ 
-        }
-         /* Стили для элементов списка */
-         .list li {
-            padding: 10px 15px; /* Добавляем отступы внутри элементов */
-            color: rgb(255, 255, 255); /* Цвет текста */
-           
-            border-radius: 5px; /* Закругляем углы */
-            cursor: pointer; /* Меняем курсор при наведении */
-            transition: background-color 0.3s ease; /* Плавное изменение цвета фона */
-        }
-        .list li a {
-    color: rgb(255, 255, 255); /* Цвет текста */
-    text-decoration: none; /* Убираем подчеркивание */
-}
-  /* Стили для элементов списка при наведении */
-  .list li:hover {
-            background-color: #d8bd26; /* Цвет фона при наведении */
-  }
-    </style>
+    <title>Главная</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <img src="logo_sucba.svg" class="logo">
-                <h1>Магазин дронов</h1>
-                  <ul class="list">
-                        <li><a href="about.html">О магазине</a></li>
-                        <li><a href="payment.html">Оплата и доставка</a></li>
-                        <li><a href="refund.html">Возврат и обмен</a></li>
-                        <li><a href="contact.html">Контакты</a></li>
-                    </ul>
-            </div>
+        <div class="container">
+            <img src="images/logo_sucba.svg" class="logo">
+            <h1>Магазин ФЦБВС</h1>                
+            <ul class="list">
+                <li><a href="about.html">О магазине</a></li>
+                <li><a href="payment.html">Оплата и доставка</a></li>
+                <li><a href="refund.html">Возврат и обмен</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+            </ul>
         </div>
         <h2>Главная</h2>
-        <hr>
-        
     </header>
-
     <!-- Основное содержимое страницы -->
     <main>
-        <!-- Здесь будет основной контент страницы -->
-        
+        <div>
+        <section id="gallery">
+        <h2>СПИСОК ТОВАРОВ</h2>
+        <div>
+            <div class="gallery-grid">
+                <figure class="gallery-grid">
+                    <a href="products/product1.html"> <!-- Ссылка на страницу товара -->
+                        <img src="tovar/IMG_20250129_154041.jpg" alt="Фото 1">
+                        <figcaption>Цена: 2 700руб (шт)</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-grid">
+                    <a href="products/product2.html">
+                        <img src="tovar/IMG_20250129_154221.jpg" alt="Фото 2">
+                        <figcaption>Цена: 3 700руб (шт)</figcaption>
+                    </a>
+                </figure class="gallery-grid">
+                <figure class="gallery-grid">
+                    <a href="products/product3.html">
+                        <img src="tovar/IMG_20250129_154846.jpg" alt="Фото 3">
+                        <figcaption> Цена: 800руб (шт)</figcaption>
+                    </a>
+                </figure class="gallery-grid">
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_155615.jpg" alt="Фото 4">
+                        <figcaption> Цена: 13 500руб</figcaption>
+                    </a>
+                </figure class="gallery-grid">
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_160053.jpg" alt="Фото 5">
+                        <figcaption>Цена: 9 500руб</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_160323.jpg" alt="Фото 6">
+                        <figcaption>Цена: 35 000руб</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_161104.jpg" alt="Фото 7">
+                        <figcaption>Цена: 95 000руб</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_161144.jpg" alt="Фото 8">
+                        <figcaption>Цена: 85 000руб</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_161525.jpg" alt="Фото 9">
+                        <figcaption>Цена: 2 500руб</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery-grid">
+                    <a href="products/product1.html">
+                        <img src="tovar/IMG_20250129_161610.jpg" alt="Фото 10">
+                        <figcaption>Цена: 5 000руб</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <div class="q">
+                <a href="tovar.html" >
+                    <button class="b1">ПОДРОБНЕЕ</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    </div>
     </main>
 
     <!-- Подвал страницы -->

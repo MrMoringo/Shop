@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styleTovar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../images/logo_sucba.svg" class="logo">
+            <h1>Магазин ФЦБВС</h1>                
+            <ul class="list">
+                <li><a href="../about.html">О магазине</a></li>
+                <li><a href="../payment.html">Оплата и доставка</a></li>
+                <li><a href="../refund.html">Возврат и обмен</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../mainpage.html">Главная</a></li>
+                <li><a href="../tovar.html">Список товаров</a></li>
+                <li><a href="product1.html">Аккумулятор 3500мАч</a></li>
+            </ul>
+        </nav>
+        <h2>Аккумулятор GNB 3500мАч 6s</h2>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="main-image" src="../tovar/IMG_20250129_154221.jpg" alt="Аккумулятор GNB">
+            </div>
+            <div class="thumbnails">
+                <img src="../tovar/IMG_20250129_154221(3).jpg" alt="Фото 1" onclick="changeImage(this.src)">
+                <img src="../tovar/IMG_20250129_154221(2).jpg" alt="Фото 2" onclick="changeImage(this.src)">
+                <img src="../tovar/IMG_20250129_154221.jpg" alt="Фото 3" onclick="changeImage(this.src)">
+            </div>
+        </div>
+        <script>
+            function changeImage(newSrc) {
+                // Находим основное изображение по ID
+                const mainImage = document.getElementById('main-image');
+                // Меняем его src на новое значение
+                mainImage.src = newSrc;
+            }
+        </script>
+        <div class="product-details">
+            <p class="price">Цена: <strong>3700 руб</strong></p>
+            <button class="add-to-cart">Добавить в корзину</button>
+            <div class="description">
+                <h3>Описание товара</h3>
+                <p>Аккумулятор GNB 3500мАч 6s — это высокопроизводительный литий-полимерный (LiPo) аккумулятор, разработанный для профессионального использования в дронах, квадрокоптерах и других радиоуправляемых моделях. Благодаря высокой емкости и стабильности работы, этот аккумулятор обеспечивает длительное время полета и надежность даже в самых demanding условиях.</p>
+            </div>
+            <div class="specifications">
+                <h3>Характеристики</h3>
+                <ul>
+                    <li><strong>Емкость:</strong> 3500 мАч</li>
+                    <li><strong>Конфигурация:</strong> 6S (22.2 В)</li>
+                    <li><strong>Рабочий ток:</strong> 70C(продолжительное время)</li>
+                    <li><strong>Рекомендованный ток зарядки:</strong> 3.5А</li>
+                    <li><strong>Силовой разьем:</strong> XT60</li>
+                    <li><strong>Вес:</strong> 450г (включай провод и разьём)</li>
+                    <li><strong>Балансировочный разъем:</strong> JST / XH</li>
+                    <li><strong>Тип аккумулятора:</strong> LiPo</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <!-- Подвал страницы -->
+    <footer>
+        <!-- Здесь будет подвал -->
+    </footer>
+</body>
+</html>
