@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styleTovar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../images/logo_sucba.svg" class="logo">
+            <h1>Магазин ФЦБВС</h1>                
+            <ul class="list">
+                <li><a href="../about.html">О магазине</a></li>
+                <li><a href="../payment.html">Оплата и доставка</a></li>
+                <li><a href="../refund.html">Возврат и обмен</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../mainpage.html">Главная</a></li>
+                <li><a href="../tovar.html">Список товаров</a></li>
+                <li><a href="product8.html">Очки DJI FPV Goggles 2</a></li>
+            </ul>
+        </nav>
+        <h2>Очки DJI Goggles 2</h2>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="main-image" src="../tovar/IMG_20250129_161144.jpg" alt="Очки DJI Goggles 2">
+            </div>
+            <div class="thumbnails">
+                <img src="../tovar/IMG_20250129_161144.jpg" alt="Фото 1" onclick="changeImage(this.src)">  
+            </div>
+        </div>
+        <script>
+            function changeImage(newSrc) {
+                // Находим основное изображение по ID
+                const mainImage = document.getElementById('main-image');
+                // Меняем его src на новое значение
+                mainImage.src = newSrc;
+            }
+        </script>
+        <div class="product-details">
+            <p class="price">Цена: <strong>85 000 руб (шт)</strong></p>
+            <button class="add-to-cart">Добавить в корзину</button>
+            <div class="description">
+                <h3>Описание товара</h3>
+                <p>
+                    DJI Goggles 2 – это стильные и компактные очки для погружения в полет, которые транслируют изображение с камеры дрона в реальном времени. Благодаря технологии HD-передачи с низкой задержкой вы получаете четкую картинку с плавным изображением и максимальной детализацией.
+
+                    Идеальный обзор, эргономичный дизайн и высокая четкость делают эти очки отличным выбором для пилотов, ценящих иммерсивные ощущения и точность управления.
+                </p>
+            </div>
+            <div class="specifications">
+                <h3>Характеристики</h3>
+                <h4>Очки DJI Goggles 2</h4>
+                <ul>
+                    <li><strong>Поддерживаемые форматы:</strong> Воспроизведение видео и аудио осуществляется в форматах MP4 и MOVss</li>
+                    <li><strong>Температурный диапазон:</strong> от -10 до 40°C</li>
+                    <li><strong>Беспроводная потоковая передача: </strong> Поддержка протокола DLNA</li>
+                    <li><strong>Поддерживаемые карты памяти:</strong> microSD (до 256 ГБ)</li>
+                    <li><strong>Максимальный битрейт видео:</strong> 50 Мбит/с</li>
+                    <li><strong>Питание:</strong> Аккумулятор DJI Goggles 2</li>
+                    <li><strong>Формат записи видео:</strong> MOV</li>
+                    <li><strong>Частота связи:</strong> 2,400 - 2,4835 ГГц; 5,725 - 5,850 ГГц
+                        </li>
+                    <li><strong>Угол обзора</strong>≤ 51°</li>
+                </ul>   
+                <h4>Аккумулятор</h4>  
+                <ul>
+                    <li><strong>Температурный диапазон зарядки:</strong> 70° - 45°C</li>
+                    <li><strong>Максимальная мощность зарядки:</strong> 712,6 Вт (5 В 2 A, 9 В 1,4 A)</li>
+                    <li><strong>Размеры:</strong> 73,04 × 40,96 × 26 мм</li>
+                    <li><strong>Время работы:</strong> 2 часа</li>
+                    <li><strong>Вес:</strong>122 г</li>
+                    <li><strong>Напряжение:</strong> 7-9 В (1,5 A)</li>
+                    <li><strong>Емкость:</strong> 1800 mAh</li>
+                    <li><strong>Тип:</strong> Li-ion</li> 
+                 </ul>   
+                 <h3>Состояние: б/у, хорошее</h3>
+                 <h3>Комплектация: DJI Goggles 2 - 1 ед.</h3>  
+                      
+            </div>
+            
+        </div>
+    </main>
+    <!-- Подвал страницы -->
+    <footer>
+        <!-- Здесь будет подвал -->
+    </footer>
+</body>
+</html>
