@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="styleTovar.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="../images/logo_sucba.svg" class="logo">
+            <h1>Магазин ФЦБВС</h1>                
+            <ul class="list">
+                <li><a href="../about.html">О магазине</a></li>
+                <li><a href="../payment.html">Оплата и доставка</a></li>
+                <li><a href="../refund.html">Возврат и обмен</a></li>
+                <li><a href="../contact.html">Контакты</a></li>
+            </ul>
+        </div>
+        <nav class="breadcrumbs">
+            <ul>
+                <li><a href="../mainpage.html">Главная</a></li>
+                <li><a href="../tovar.html">Список товаров</a></li>
+                <li><a href="product9.html">Внешний модуль ES900TX</a></li>
+            </ul>
+        </nav>
+        <h2>Внешний модуль ES900TX</h2>
+    </header>
+    <!-- Основное содержимое страницы -->
+    <main class="product-page">
+        <div class="product-images">
+            <div class="main-image">
+                <img id="main-image" src="../tovar/IMG_20250129_161525.jpg" alt="Внешний модуль ES900TX">
+            </div>
+            <div class="thumbnails">
+                <img src="../tovar/IMG_20250129_161525.jpg" alt="Фото 1" onclick="changeImage(this.src)">  
+            </div>
+        </div>
+        <script>
+            function changeImage(newSrc) {
+                // Находим основное изображение по ID
+                const mainImage = document.getElementById('main-image');
+                // Меняем его src на новое значение
+                mainImage.src = newSrc;
+            }
+        </script>
+        <div class="product-details">
+            <p class="price">Цена: <strong>2 500 руб (шт)</strong></p>
+            <button class="add-to-cart">Добавить в корзину</button>
+            <div class="description">
+                <h3>Описание товара</h3>
+                <p>
+                    ВЧ-модуль ES900TX – это компактный передатчик, предназначенный для дальнобойной беспроводной передачи данных в диапазоне 915 МГц.
+                </p>
+            </div>
+            <div class="specifications">
+                <h3>Характеристики</h3>
+                <h4>Внешний модуль ES900TX</h4>
+                <ul>
+                    <li><strong>Микроконтроллеры:</strong> ESP32 + ESP8285</li>
+                    <li><strong>Размер:</strong> 55 мм * 39 мм * 11 мм</li>
+                    <li><strong>Вес: </strong> 9,2 грамм</li>
+                    <li><strong>Антенный разъем:</strong> SMA</li>
+                    <li><strong>Вход VCC:</strong> 5 ~ 13 В, рекомендуется 5 ~ 9 В</li>
+                    <li><strong>Частота:</strong> 915 МГц</li>
+                    <li><strong>Максимальная выходная мощность:</strong> менее 33 дБм</li>
+                 </ul>   
+                 <h3>Состояние: б/у, хорошее</h3>
+                 <h3>Комплектация: 1 х внешний модуль ES900TX</h3>  
+                      
+            </div>
+            
+        </div>
+    </main>
+    <!-- Подвал страницы -->
+    <footer>
+        <!-- Здесь будет подвал -->
+    </footer>
+</body>
+</html>
